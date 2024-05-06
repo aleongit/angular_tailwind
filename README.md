@@ -3,7 +3,8 @@
 Checkpoints:
 
 - new app in Angular 17
-- add tailwind
+- add tailwind 3.4.3
+- add flowbite 2.3.0
 
 
 
@@ -135,14 +136,41 @@ module.exports = {
 }
 ```
 
+- **Use Flowbite**
+Update the app.component.ts file to use the initFlowbite function to enable the interactive components via data attributes:
+```
+import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  title = 'web-app';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
+}
+```
 
 
 
 ## Doc
 
 ### tailwind
+- https://tailwindui.com/
+- https://tailwindui.com/components
+- https://tailwindcss.com/docs/installation
 - https://tailwindcss.com/docs/guides/angular
+- https://tailwindui.com/components/application-ui/navigation/navbars
 
 
 ### flowbite
+- https://flowbite.com/
+- https://flowbite.com/docs/getting-started/introduction/
 - https://flowbite.com/docs/getting-started/angular/
+- https://flowbite.com/docs/components/navbar/
