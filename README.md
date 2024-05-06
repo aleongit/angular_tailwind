@@ -117,15 +117,21 @@ Install Flowbite as a dependency using NPM by running the following command:
 npm install flowbite
 ```
 
-- **Require Flowbite as a plugin**
+- **Configure Flowbite**
 Require Flowbite as a plugin inside the `tailwind.config.js` file:
 ```
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-
-    plugins: [
-        require('flowbite/plugin')
-    ]
-
+  content: [
+    "./src/**/*.{html,ts}",
+    "./node_modules/flowbite/**/*.js" // add this line
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 ```
 
@@ -136,3 +142,7 @@ module.exports = {
 
 ### tailwind
 - https://tailwindcss.com/docs/guides/angular
+
+
+### flowbite
+- https://flowbite.com/docs/getting-started/angular/
