@@ -19,7 +19,7 @@ Checkpoints:
 
 ## Dependencies
 
-- 
+- Flowbite
 
 
 
@@ -110,6 +110,13 @@ Start using Tailwind’s utility classes to style your content.
   Hello world!
 </h1>
 ```
+
+- **Install Flowbite**
+Install Flowbite as a dependency using NPM by running the following command:
+```
+npm install flowbite
+```
+
 
 ## Doc
 
