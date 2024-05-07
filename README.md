@@ -197,3 +197,11 @@ export class AppComponent implements OnInit {
 
 ### Animate a hamburger menu from Tailwind in Angular
 - https://stackoverflow.com/questions/66257566/animate-a-hamburger-menu-from-tailwind-in-angular
+
+
+### Class and style binding
+https://angular.io/guide/class-binding
+
+
+### Tailwind CSS class: .cursor-pointer
+- https://tailwind.build/classes/utilities/cursor-pointer
