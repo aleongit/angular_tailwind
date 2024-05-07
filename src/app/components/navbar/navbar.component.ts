@@ -8,12 +8,12 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { Router } from '@angular/router';
+import { Router , RouterLinkActive  } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   animations: [
