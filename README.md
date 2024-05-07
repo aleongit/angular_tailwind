@@ -5,6 +5,8 @@ Checkpoints:
 - new app in Angular 17
 - add tailwind 3.4.3
 - add flowbite 2.3.0
+- use angular animations
+
 
 ### Flowbite
 
