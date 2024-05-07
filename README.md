@@ -181,3 +181,19 @@ export class AppComponent implements OnInit {
 - https://flowbite.com/docs/getting-started/introduction/
 - https://flowbite.com/docs/getting-started/angular/
 - https://flowbite.com/docs/components/navbar/
+
+
+### https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
+- https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
+
+
+### Angular Animations
+- https://angular.io/guide/animations
+
+
+### How to add BrowserAnimationsModule or NoopAnimationsModule to Standalone Component?
+- https://stackoverflow.com/questions/72504142/how-to-add-browseranimationsmodule-or-noopanimationsmodule-to-standalone-compone
+
+
+### Animate a hamburger menu from Tailwind in Angular
+- https://stackoverflow.com/questions/66257566/animate-a-hamburger-menu-from-tailwind-in-angular
