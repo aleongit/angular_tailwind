@@ -207,3 +207,7 @@ https://angular.io/guide/class-binding
 
 ### Tailwind CSS class: .cursor-pointer
 - https://tailwind.build/classes/utilities/cursor-pointer
+
+
+### Angular - @for
+- https://angular.io/api/core/for
