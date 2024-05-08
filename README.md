@@ -255,6 +255,9 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/installation
 - https://tailwindcss.com/docs/guides/angular
 - https://tailwindui.com/components/application-ui/navigation/navbars
+- https://tailwindcss.com/docs/margin
+- https://tailwindcss.com/docs/padding
+- https://tailwindcss.com/docs/list-style-type
 
 
 ### flowbite
