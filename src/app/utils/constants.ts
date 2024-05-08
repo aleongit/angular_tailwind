@@ -7,6 +7,12 @@ export const APP_CONSTANTS = {
 
 export const ITEMS_MENU: ItemNavigation[] = [
   {
+    name: 'Home',
+    url: '/',
+    icon: '',
+    color: '',
+  },
+  {
     name: 'Core Concepts',
     url: '/core-concepts',
     icon: '',
