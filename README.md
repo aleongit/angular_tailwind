@@ -6,7 +6,7 @@ Checkpoints:
 - add tailwind 3.4.3
 - add flowbite 2.3.0
 - use angular animations
-
+- add PrismJS
 
 ### Flowbite
 
@@ -166,6 +166,85 @@ export class AppComponent implements OnInit {
 }
 ```
 
+- **install PrismJS** 
+```
+npm i prismjs
+npm i --save-dev @types/prismjs
+```
+
+- **Create highlight service**
+```
+import { Injectable, Inject } from '@angular/core';
+import { PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+
+import 'prismjs';
+import 'prismjs/components/prism-css';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-java';
+import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-sass';
+import 'prismjs/components/prism-scss';
+
+declare var Prism: any;
+
+@Injectable()
+export class HighlightService {
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
+  highlightAll() {
+    if (isPlatformBrowser(this.platformId)) {
+      Prism.highlightAll();
+    }
+  }
+}
+```
+
+- ***Use highlight service in your component**
+```
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { HighlightService } from '../../services/highlight.service';
+
+@Component({
+...
+
+})
+export class Component implements OnInit, AfterViewChecked {
+
+  highlighted: boolean = false;
+
+  constructor(private highlightService: HighlightService) {}
+
+  /**
+   * Lifecycle hook AfterViewChecked is used here to call the highlight service
+   * when view is ready.
+   * Method ngAfterViewChecked might be called multiple times.
+   * I use highlighted boolean to check if highlighting is already done
+   * to prevent multiple highlightAll method calls.
+   */
+  ngAfterViewChecked() {
+    if (!this.highlighted) {
+      this.highlightService.highlightAll();
+      this.highlighted = true;
+    }
+  }
+
+  /**
+   * Fetch blog post from API
+   */
+  ngOnInit() {}
+}
+```
+
+- **Add Prism styles**
+Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alternatively you can add CSS files directly into your HTML.
+```
+@import "../node_modules/prismjs/themes/prism-tomorrow.css";
+```
+
+
 
 
 ## Doc
@@ -211,3 +290,10 @@ https://angular.io/guide/class-binding
 
 ### Angular - @for
 - https://angular.io/api/core/for
+
+
+### Prism JS
+- https://prismjs.com/
+
+### Code syntax highlighting with Angular and Prism.js
+- https://auralinna.blog/post/2017/code-syntax-highlighting-with-angular-and-prismjs
