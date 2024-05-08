@@ -202,7 +202,7 @@ export class HighlightService {
 }
 ```
 
-- ***Use highlight service in your component**
+- **Use highlight service in your component**
 ```
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { HighlightService } from '../../services/highlight.service';
