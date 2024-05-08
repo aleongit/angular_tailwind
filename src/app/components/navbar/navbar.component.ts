@@ -8,12 +8,13 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { Router , RouterLinkActive  } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { APP_CONSTANTS, ITEMS_MENU } from '../../utils/constants';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIf, RouterLinkActive],
+  imports: [NgIf, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   animations: [
@@ -39,6 +40,9 @@ import { Router , RouterLinkActive  } from '@angular/router';
   ],
 })
 export class NavbarComponent {
+  constants = APP_CONSTANTS;
+  itemsMenu = ITEMS_MENU;
+
   constructor(private router: Router) {}
 
   isShowDropdown = false;
