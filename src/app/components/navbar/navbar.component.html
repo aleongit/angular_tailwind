@@ -117,8 +117,9 @@
         @if (getUrlRouter() === item.url) {
         @for (subitem of item.items; track $index) {
         <li>
-          <a [routerLink]="[item.url]" fragment="{{transformUrl(subitem)}}" class="text-gray-900 dark:text-white hover:underline">{{subitem}}
-            {{transformUrl(subitem)}}</a>
+          <a [routerLink]="[item.url]" fragment="{{transformUrl(subitem)}}"
+            class="text-gray-900 dark:text-white hover:underline">{{subitem}}
+          </a>
         </li>
         }
         }
