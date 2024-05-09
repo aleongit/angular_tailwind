@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { APP_CONSTANTS } from '../../utils/constants';
 import { HighlightService } from '../../services/highlight.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-core-concepts',
@@ -13,9 +14,12 @@ export class CoreConceptsComponent implements OnInit, AfterViewChecked {
   constants = APP_CONSTANTS;
   highlighted: boolean = false;
 
-  constructor(private highlightService: HighlightService) {}
+  constructor(
+    private highlightService: HighlightService,
+    private sanitized: DomSanitizer
+  ) { }
 
-  code = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+  code1 = `<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
   <div class="shrink-0">
     <img class="h-12 w-12" src="${this.constants.ICON_MENU}" alt="ChitChat Logo">
   </div>
@@ -26,6 +30,13 @@ export class CoreConceptsComponent implements OnInit, AfterViewChecked {
     <p class="text-slate-500">You have a new message!</p>
   </div>
 </div>`;
+
+  code2 = `<button class="bg-sky-500 hover:bg-sky-700">
+Save changes
+</button>`
+  code2Sanitized = this.sanitized.bypassSecurityTrustHtml(`<button class="bg-sky-500 hover:bg-sky-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white">
+  Save changes
+</button>`);
 
   /**
    * Lifecycle hook AfterViewChecked is used here to call the highlight service
@@ -44,5 +55,5 @@ export class CoreConceptsComponent implements OnInit, AfterViewChecked {
   /**
    * Fetch blog post from API
    */
-  ngOnInit() {}
+  ngOnInit() { }
 }

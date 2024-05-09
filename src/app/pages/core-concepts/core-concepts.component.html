@@ -1,18 +1,19 @@
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <!-- subitem -->
-        <div id="utilityfirstfundamentals">
-            <div class="max-w-screen-sm">
-                <h1
-                    class="mb-4 text-5xl tracking-tight font-extrabold lg:text-7xl text-primary-600 dark:text-primary-500">
-                    Core Concepts
-                </h1>
-            </div>
+
+        <!-- big title-->
+        <div class="max-w-screen-sm">
+            <h1 class="mb-4 text-5xl tracking-tight font-extrabold lg:text-7xl text-primary-600 dark:text-primary-500">
+                Core Concepts
+            </h1>
+        </div>
+
+        <!-- subitem 1 -->
+        <section id="utilityfirstfundamentals" class="pt-10 pb-10">
+
+            <!-- header -->
             <header id="header" class="relative z-20">
                 <div>
-                    <p class="mb-2 text-sm leading-6 font-semibold text-sky-500 dark:text-sky-400">
-                        Core Concepts
-                    </p>
                     <div class="flex items-center">
                         <h1
                             class="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
@@ -26,21 +27,28 @@
                 </p>
             </header>
 
+            <!-- content -->
             <div id="content-wrapper" class="relative z-20 prose prose-slate mt-8 dark:prose-dark">
+
+                <!-- sample -->
                 <div class="mt-5">
                     <div class="not-prose relative bg-slate-50 rounded-xl overflow-hidden dark:bg-slate-800/25">
                         <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25 dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"
                             style="background-position: 10px 10px"></div>
                         <div class="relative rounded-xl overflow-auto p-8">
-                            <div [innerHTML]="code"></div>
+                            <div [innerHTML]="code1"></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- code -->
                 <div class="mt-5">
                     <pre class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-        <code class="language-html">{{code}}</code>
-    </pre>
+                        <code class="language-html">{{code1}}</code>
+                    </pre>
                 </div>
+
+                <!-- text -->
                 <div class="mt-5 ml-5">
                     <ul class="list-image-[url(assets/check.svg)] list-inside mt-6 text-lg text-slate-700 dark:text-slate-400"
                         role="list">
@@ -83,10 +91,71 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- subitem -->
-        <div id="handlinghoverfocusandotherstates"></div>
+        </section>
+
+        <!-- subitem 2 -->
+        <section id="handlinghoverfocusandotherstates" class="pb-10">
+
+            <!-- header -->
+            <header id="header" class="relative z-20">
+                <div>
+                    <div class="flex items-center">
+                        <h1
+                            class="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                            Handling Hover, Focus, and Other States
+                        </h1>
+                    </div>
+                </div>
+                <p class="mt-2 text-lg text-slate-700 dark:text-slate-400">
+                    Using utilities to style elements on hover, focus, and more.
+                </p>
+            </header>
+
+            <!-- content -->
+            <div id="content-wrapper" class="relative z-20 prose prose-slate mt-8 dark:prose-dark">
+
+                <!-- sample -->
+                <div class="mt-5">
+                    <div class="not-prose relative bg-slate-50 rounded-xl overflow-hidden dark:bg-slate-800/25">
+                        <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25 dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"
+                            style="background-position: 10px 10px"></div>
+                        <div class="relative rounded-xl overflow-auto p-8">
+                            <div [innerHTML]="code2Sanitized"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- code -->
+                <div class="mt-5">
+                    <pre class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                        <code class="language-html">{{code2}}</code>
+                    </pre>
+                </div>
+
+                <!-- text -->
+                <div class="mt-5 ml-5">
+                    <ul class="list-image-[url(assets/check.svg)] list-inside mt-6 text-lg text-slate-700 dark:text-slate-400"
+                        role="list">
+                        <li><a href="/docs/hover-focus-and-other-states#pseudo-classes">Pseudo-classes</a>, like
+                            <code>:hover</code>, <code>:focus</code>, <code>:first-child</code>, and
+                            <code>:required</code>
+                        </li>
+                        <li><a href="/docs/hover-focus-and-other-states#pseudo-elements">Pseudo-elements</a>, like
+                            <code>::before</code>, <code>::after</code>, <code>::placeholder</code>, and
+                            <code>::selection</code>
+                        </li>
+                        <li><a href="/docs/hover-focus-and-other-states#media-and-feature-queries">Media and feature
+                                queries</a>, like responsive breakpoints, dark mode, and
+                            <code>prefers-reduced-motion</code>
+                        </li>
+                        <li><a href="/docs/hover-focus-and-other-states#attribute-selectors">Attribute selectors</a>,
+                            like <code>[dir="rtl"]</code> and <code>[open]</code></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
 
     </div>
 </section>
