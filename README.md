@@ -258,6 +258,8 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/margin
 - https://tailwindcss.com/docs/padding
 - https://tailwindcss.com/docs/list-style-type
+- https://tailwindcss.com/docs/list-style-image
+- https://tailwindcss.com/docs/list-style-position
 
 
 ### flowbite
@@ -298,5 +300,10 @@ https://angular.io/guide/class-binding
 ### Prism JS
 - https://prismjs.com/
 
+
 ### Code syntax highlighting with Angular and Prism.js
 - https://auralinna.blog/post/2017/code-syntax-highlighting-with-angular-and-prismjs
+
+
+### Turning on ScrollTop Restoration for the Standalone Angular Router
+- https://fireflysemantics.medium.com/turning-on-scrolltop-restoration-for-the-standalone-angular-router-afd98bd8defd
