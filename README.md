@@ -305,5 +305,9 @@ https://angular.io/guide/class-binding
 - https://auralinna.blog/post/2017/code-syntax-highlighting-with-angular-and-prismjs
 
 
+### Angular - InMemoryScrollingOptions
+- https://angular.io/api/router/InMemoryScrollingOptions
+
+
 ### Turning on ScrollTop Restoration for the Standalone Angular Router
 - https://fireflysemantics.medium.com/turning-on-scrolltop-restoration-for-the-standalone-angular-router-afd98bd8defd
