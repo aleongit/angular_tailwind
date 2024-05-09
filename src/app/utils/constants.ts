@@ -11,17 +11,28 @@ export const ITEMS_MENU: ItemNavigation[] = [
     url: '/',
     icon: '',
     color: '',
+    items: [],
   },
   {
     name: 'Core Concepts',
     url: '/core-concepts',
     icon: '',
     color: '',
+    items: [
+      'Utility-First Fundamentals',
+      'Handling Hover, Focus, and Other States',
+      'Responsive Design',
+      'Dark Mode',
+      'Reusing Styles',
+      'Adding Custom Styles',
+      'Functions & Directives',
+    ],
   },
   {
     name: 'Customization',
     url: '/customization',
     icon: '',
     color: '',
+    items: [],
   },
 ];

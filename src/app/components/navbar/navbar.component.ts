@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { JsonPipe, NgIf } from '@angular/common';
 import {
   trigger,
   state,
@@ -8,13 +8,18 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  ActivatedRoute,
+} from '@angular/router';
 import { APP_CONSTANTS, ITEMS_MENU } from '../../utils/constants';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIf, RouterLink, RouterLinkActive],
+  imports: [NgIf, RouterLink, RouterLinkActive, JsonPipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   animations: [
@@ -43,10 +48,11 @@ export class NavbarComponent {
   constants = APP_CONSTANTS;
   itemsMenu = ITEMS_MENU;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private activateRoute: ActivatedRoute) {}
 
   isShowDropdown = false;
   isShowMenuMobile = false;
+  itemUrl: string = '';
 
   get openCloseTriggerDropdown() {
     return this.isShowDropdown ? 'open' : 'closed';
@@ -62,5 +68,18 @@ export class NavbarComponent {
 
   toggleMobileMenu() {
     this.isShowMenuMobile = !this.isShowMenuMobile;
+  }
+
+  //obtenir path url i treure fragment
+  getUrlRouter() {
+    //console.log(this.router);
+    //console.log(this.router.url);
+    const string = this.router.url.split('#', 1).toString();
+    return string;
+  }
+
+  //transformar nom subitem a minúscules i sense espais ni caràcters especials
+  transformUrl(string: string) {
+    return string.toLowerCase().replace(/[^A-Z0-9]/gi, '');
   }
 }

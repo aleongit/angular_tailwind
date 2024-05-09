@@ -3,4 +3,5 @@ export interface ItemNavigation {
   url: string;
   icon: string;
   color: string;
+  items: string[];
 }
