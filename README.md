@@ -262,7 +262,8 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/list-style-type
 - https://tailwindcss.com/docs/list-style-image
 - https://tailwindcss.com/docs/list-style-position
-
+- https://tailwindcss.com/docs/position
+- https://tailwindcss.com/docs/z-index
 
 
 ### flowbite
@@ -270,6 +271,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://flowbite.com/docs/getting-started/introduction/
 - https://flowbite.com/docs/getting-started/angular/
 - https://flowbite.com/docs/components/navbar/
+- https://flowbite.com/docs/components/buttons/
 
 
 ### https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
@@ -318,3 +320,7 @@ https://angular.io/guide/class-binding
 
 ### Angular innerHTML property not working while try to render button control
 - https://stackoverflow.com/questions/56287237/angular-innerhtml-property-not-working-while-try-to-render-button-control
+
+
+### Angular scroll-to-top implementation
+- https://theangularpath.anirbanblogs.com/2021/06/angular-scroll-to-top-implementation.html
