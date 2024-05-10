@@ -264,6 +264,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/list-style-position
 - https://tailwindcss.com/docs/position
 - https://tailwindcss.com/docs/z-index
+- https://tailwindcss.com/docs/customizing-colors
 
 
 ### flowbite
@@ -324,3 +325,7 @@ https://angular.io/guide/class-binding
 
 ### Angular scroll-to-top implementation
 - https://theangularpath.anirbanblogs.com/2021/06/angular-scroll-to-top-implementation.html
+
+
+### Angular 17: Inject or constructor? Signals or Observables? ChangeDetection?
+- https://medium.com/@fabiozuin/angular-17-inject-or-constructor-signals-or-observables-changedetection-a1b48a5479d9
