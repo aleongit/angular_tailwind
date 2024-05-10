@@ -277,7 +277,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://flowbite.com/docs/components/buttons/
 
 
-### https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
+### Show/hide or toggle element in angular
 - https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
 
 
@@ -294,7 +294,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 
 
 ### Class and style binding
-https://angular.io/guide/class-binding
+- https://angular.io/guide/class-binding
 
 
 ### Tailwind CSS class: .cursor-pointer
