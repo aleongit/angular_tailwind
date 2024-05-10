@@ -1,3 +1,7 @@
 <app-navbar />
 
+@if (showScroll | async) {
+<app-backtotop (scrollToTop)="onScrollToTop()"></app-backtotop>
+}
+
 <router-outlet />
