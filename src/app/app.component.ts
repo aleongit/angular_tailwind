@@ -1,5 +1,5 @@
-import { Component, ChangeDetectionStrategy, inject  } from '@angular/core';
-import { AsyncPipe, CommonModule, DOCUMENT, ViewportScroller } from '@angular/common';
+import { Component, inject  } from '@angular/core';
+import { AsyncPipe, DOCUMENT, ViewportScroller } from '@angular/common';
 import { fromEvent, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
