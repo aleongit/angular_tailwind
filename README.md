@@ -277,6 +277,15 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://flowbite.com/docs/components/buttons/
 
 
+
+### tailblocks
+- https://tailblocks.cc/
+
+
+### heroicons
+- https://heroicons.com/
+
+
 ### Show/hide or toggle element in angular
 - https://medium.com/@ujjawalr/show-hide-or-toggle-element-in-angular-289f64f55fb4
 
@@ -331,3 +340,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 
 ### Angular 17: Inject or constructor? Signals or Observables? ChangeDetection?
 - https://medium.com/@fabiozuin/angular-17-inject-or-constructor-signals-or-observables-changedetection-a1b48a5479d9
+
+
+### Angular 17 Dark mode using Tailwind CSS, Signal and Local Storage| Angular Tailwind Dark Mode
+- https://www.youtube.com/watch?v=oS7L1YRJQrg
