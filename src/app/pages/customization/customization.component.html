@@ -1,1 +1,64 @@
-<p>customization works!</p>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <!-- big title-->
+        <div class="max-w-screen-sm">
+            <h1 class="text-black dark:text-white mb-4 text-5xl tracking-tight font-extrabold lg:text-7xl">
+                Customization
+            </h1>
+        </div>
+
+        <!-- subitem 1 -->
+        <section id="configuration" class="pt-10 pb-10">
+            <!-- header -->
+            <header id="header" class="relative z-20">
+                <div>
+                    <div class="flex items-center">
+                        <h1
+                            class="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
+                            Configuration
+                        </h1>
+                    </div>
+                </div>
+                <p class="mt-2 text-lg text-slate-700 dark:text-slate-400">
+                    By default, Tailwind will look for an optional <code>tailwind.config.js</code> file at the root of
+                    your project where you can define any customizations
+                </p>
+            </header>
+
+            <!-- content -->
+            <div id="content-wrapper" class="relative z-20 prose prose-slate mt-8 dark:prose-dark">
+                <!-- sample -->
+                <!--
+                <div class="mt-5">
+                    <div class="not-prose relative bg-slate-50 rounded-xl overflow-hidden dark:bg-slate-800/25">
+                        <div class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25 dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"
+                            style="background-position: 10px 10px"></div>
+                        <div class="relative rounded-xl overflow-auto p-8">
+                            <div [innerHTML]="code1"></div>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <!-- code -->
+                <div class="mt-5">
+                    <pre class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                        <code class="language-js">{{code1}}</code>
+                    </pre>
+                </div>
+
+                <!-- text -->
+                <div class="mt-5 ml-5">
+                    <ul class="list-image-[url(assets/check.svg)] list-inside mt-6 text-lg text-slate-700 dark:text-slate-400"
+                        role="list">
+                        <li>
+                            Every section of the config file is optional, so you only have to specify what you’d like to
+                            change
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
