@@ -345,3 +345,9 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 
 ### Add both !important & selector strategy for tailwind configuration
 - https://stackoverflow.com/questions/68527235/add-both-important-selector-strategy-for-tailwind-configuration
+
+
+### Angular - signals
+- https://angular.io/guide/signals
+- https://dev.to/jorgeucano/angular-signals-que-son-y-como-funcionan-4mem
+- https://www.viewnext.com/angular-y-signals-transformando-el-desarrollo-web/
