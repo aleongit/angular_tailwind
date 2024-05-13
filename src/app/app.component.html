@@ -1,7 +1,11 @@
-<app-navbar />
+<div [ngClass]="darkModeService.darkModeSignal()">
 
-@if (showScroll | async) {
-<app-backtotop (scrollToTop)="onScrollToTop()"></app-backtotop>
-}
+    <app-navbar />
 
-<router-outlet />
+    @if (showScroll | async) {
+    <app-backtotop (scrollToTop)="onScrollToTop()"></app-backtotop>
+    }
+
+    <router-outlet />
+
+</div>
