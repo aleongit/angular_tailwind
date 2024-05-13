@@ -263,6 +263,11 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/cursor
 - https://tailwindcss.com/docs/height
 - https://tailwindcss.com/docs/background-clip
+- https://tailwindcss.com/docs/object-fit
+- https://tailwindcss.com/docs/box-shadow
+- https://tailwindcss.com/docs/blur
+- https://tailwindcss.com/docs/grayscale
+- https://tailwindcss.com/docs/backdrop-blur
 
 
 
@@ -273,6 +278,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://flowbite.com/docs/getting-started/angular/
 - https://flowbite.com/docs/components/navbar/
 - https://flowbite.com/docs/components/buttons/
+- https://flowbite.com/docs/typography/images/
 
 
 
