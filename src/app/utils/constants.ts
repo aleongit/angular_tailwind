@@ -9,15 +9,11 @@ export const ITEMS_MENU: ItemNavigation[] = [
   {
     name: 'Home',
     url: '/',
-    icon: '',
-    color: '',
     items: [],
   },
   {
     name: 'Core Concepts',
     url: '/core-concepts',
-    icon: '',
-    color: '',
     items: [
       'Utility-First Fundamentals',
       'Handling Hover, Focus, and Other States',
@@ -28,8 +24,16 @@ export const ITEMS_MENU: ItemNavigation[] = [
   {
     name: 'Customization',
     url: '/customization',
-    icon: '',
-    color: '',
+    items: [
+      'Configuration',
+      'Content Configuration',
+      'Customizing Screens',
+      'Customizing Colors',
+    ],
+  },
+  {
+    name: 'Page Not Found',
+    url: '/pagenotfound',
     items: [],
   },
 ];
