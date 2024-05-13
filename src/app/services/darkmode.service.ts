@@ -1,11 +1,15 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, effect, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DarkmodeService {
   //signal
-  darkModeSignal = signal<string>('light');
+  //darkModeSignal = signal<string>('light');
+  //init signal to get local storage
+  darkModeSignal = signal<string>(
+    JSON.parse(window.localStorage.getItem('darkModeSignal') ?? 'light')
+  );
 
   updateDarkMode() {
     this.darkModeSignal.update((value) =>
@@ -13,5 +17,12 @@ export class DarkmodeService {
     );
   }
 
-  constructor() {}
+  constructor() {
+    effect(() => {
+      window.localStorage.setItem(
+        'darkModeSignal',
+        JSON.stringify(this.darkModeSignal())
+      );
+    });
+  }
 }
