@@ -262,6 +262,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://tailwindcss.com/docs/table-layout
 - https://tailwindcss.com/docs/cursor
 - https://tailwindcss.com/docs/height
+- https://tailwindcss.com/docs/background-clip
 
 
 
@@ -351,3 +352,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 - https://angular.io/guide/signals
 - https://dev.to/jorgeucano/angular-signals-que-son-y-como-funcionan-4mem
 - https://www.viewnext.com/angular-y-signals-transformando-el-desarrollo-web/
+
+
+### Tailwind Gradient Generator
+https://tailwindcomponents.com/gradient-generator/

@@ -5,3 +5,11 @@
 @tailwind utilities;
 
 @import "../node_modules/prismjs/themes/prism-tomorrow.css";
+
+//overwrite base
+@layer base {
+    mark {
+      @apply bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent;
+    }
+    /* ... */
+  }
