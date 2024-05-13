@@ -23,9 +23,6 @@ export const ITEMS_MENU: ItemNavigation[] = [
       'Handling Hover, Focus, and Other States',
       'Responsive Design',
       'Dark Mode',
-      'Reusing Styles',
-      'Adding Custom Styles',
-      'Functions & Directives',
     ],
   },
   {
