@@ -344,3 +344,7 @@ Next add Prism styles into your `styles.scss`. Theme CSS is needed at least. Alt
 
 ### Angular 17 Dark mode using Tailwind CSS, Signal and Local Storage| Angular Tailwind Dark Mode
 - https://www.youtube.com/watch?v=oS7L1YRJQrg
+
+
+### Add both !important & selector strategy for tailwind configuration
+- https://stackoverflow.com/questions/68527235/add-both-important-selector-strategy-for-tailwind-configuration
