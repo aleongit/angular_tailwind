@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { JsonPipe, NgIf } from '@angular/common';
 import {
   trigger,
@@ -15,6 +15,7 @@ import {
   ActivatedRoute,
 } from '@angular/router';
 import { APP_CONSTANTS, ITEMS_MENU } from '../../utils/constants';
+import { DarkmodeService } from '../../services/darkmode.service';
 
 @Component({
   selector: 'app-navbar',
@@ -81,5 +82,12 @@ export class NavbarComponent {
   //transformar nom subitem a minúscules i sense espais ni caràcters especials
   transformUrl(string: string) {
     return string.toLowerCase().replace(/[^A-Z0-9]/gi, '');
+  }
+
+  //darkmode
+  darkModeService: DarkmodeService = inject(DarkmodeService);
+
+  toogleDarkMode() {
+    this.darkModeService.updateDarkMode();
   }
 }
